@@ -1,0 +1,6 @@
+framework module Pods_WonkaCrew_WonkaCrewUITests {
+  umbrella header "Pods-WonkaCrew-WonkaCrewUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
