@@ -3,18 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		439D38DD25F53F6800C0AA05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D38DC25F53F6800C0AA05 /* AppDelegate.swift */; };
 		439D38DF25F53F6800C0AA05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D38DE25F53F6800C0AA05 /* SceneDelegate.swift */; };
-		439D38E125F53F6800C0AA05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D38E025F53F6800C0AA05 /* ViewController.swift */; };
 		439D38E425F53F6800C0AA05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 439D38E225F53F6800C0AA05 /* Main.storyboard */; };
 		439D38E625F53F7500C0AA05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 439D38E525F53F7500C0AA05 /* Assets.xcassets */; };
 		439D38E925F53F7500C0AA05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 439D38E725F53F7500C0AA05 /* LaunchScreen.storyboard */; };
 		439D38F425F53F7500C0AA05 /* WonkaCrewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D38F325F53F7500C0AA05 /* WonkaCrewTests.swift */; };
 		439D38FF25F53F7500C0AA05 /* WonkaCrewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D38FE25F53F7500C0AA05 /* WonkaCrewUITests.swift */; };
+		439D392B25F5455600C0AA05 /* CrewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D392A25F5455600C0AA05 /* CrewListViewController.swift */; };
+		439D394025F54DD800C0AA05 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D393F25F54DD800C0AA05 /* APIConfiguration.swift */; };
+		439D394825F55C5A00C0AA05 /* ServerFetcherType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D394725F55C5A00C0AA05 /* ServerFetcherType.swift */; };
+		439D394E25F55CF000C0AA05 /* OompaLoompa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D394D25F55CF000C0AA05 /* OompaLoompa.swift */; };
+		439D395625F55E0300C0AA05 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D395525F55E0300C0AA05 /* Gender.swift */; };
+		439D395B25F5637600C0AA05 /* ServerFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D395A25F5637600C0AA05 /* ServerFetcher.swift */; };
+		439D396025F57DCB00C0AA05 /* OompaLoompaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D395F25F57DCB00C0AA05 /* OompaLoompaTableViewCell.swift */; };
+		439D396525F57F1C00C0AA05 /* OompaLoompaPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D396425F57F1C00C0AA05 /* OompaLoompaPresentable.swift */; };
+		439D396A25F57FB500C0AA05 /* CrewListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D396925F57FB500C0AA05 /* CrewListViewModel.swift */; };
+		439D397225F5815B00C0AA05 /* OompaLoompaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D397125F5815B00C0AA05 /* OompaLoompaViewModel.swift */; };
+		439D397B25F613FB00C0AA05 /* CustomActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D397A25F613FB00C0AA05 /* CustomActivityIndicatorView.swift */; };
+		439D399025F61BCF00C0AA05 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D398F25F61BCF00C0AA05 /* UIImage+Gif.swift */; };
+		439D399E25F6359100C0AA05 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 439D399D25F6359100C0AA05 /* loading.gif */; };
+		439D39A625F6424900C0AA05 /* CrewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D39A525F6424900C0AA05 /* CrewList.swift */; };
+		439D39DB25F67F2600C0AA05 /* loadingImage.gif in Resources */ = {isa = PBXBuildFile; fileRef = 439D39DA25F67F2600C0AA05 /* loadingImage.gif */; };
+		4407DD9813FBA53DE86D6DCC /* Pods_WonkaCrewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A913A2B00B0894FA80630F8 /* Pods_WonkaCrewTests.framework */; };
+		73362A6677A3D9E70DE96A65 /* Pods_WonkaCrew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C82FEB402CE82B6A4C56404 /* Pods_WonkaCrew.framework */; };
+		C31D0D499CDAF14BA0B97D1B /* Pods_WonkaCrew_WonkaCrewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F54DE638266D10B9D82549C /* Pods_WonkaCrew_WonkaCrewUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +52,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D1C3629390CA2E6F7827D50 /* Pods-WonkaCrewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WonkaCrewTests.debug.xcconfig"; path = "Target Support Files/Pods-WonkaCrewTests/Pods-WonkaCrewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0E9538EAA80BCDCC53311F19 /* Pods-WonkaCrew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WonkaCrew.release.xcconfig"; path = "Target Support Files/Pods-WonkaCrew/Pods-WonkaCrew.release.xcconfig"; sourceTree = "<group>"; };
+		0F54DE638266D10B9D82549C /* Pods_WonkaCrew_WonkaCrewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WonkaCrew_WonkaCrewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C82FEB402CE82B6A4C56404 /* Pods_WonkaCrew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WonkaCrew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		439D38D925F53F6800C0AA05 /* WonkaCrew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WonkaCrew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		439D38DC25F53F6800C0AA05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		439D38DE25F53F6800C0AA05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		439D38E025F53F6800C0AA05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		439D38E325F53F6800C0AA05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		439D38E525F53F7500C0AA05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		439D38E825F53F7500C0AA05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +69,26 @@
 		439D38FA25F53F7500C0AA05 /* WonkaCrewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WonkaCrewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		439D38FE25F53F7500C0AA05 /* WonkaCrewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WonkaCrewUITests.swift; sourceTree = "<group>"; };
 		439D390025F53F7500C0AA05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		439D392A25F5455600C0AA05 /* CrewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewListViewController.swift; sourceTree = "<group>"; };
+		439D393F25F54DD800C0AA05 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		439D394725F55C5A00C0AA05 /* ServerFetcherType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerFetcherType.swift; sourceTree = "<group>"; };
+		439D394D25F55CF000C0AA05 /* OompaLoompa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OompaLoompa.swift; sourceTree = "<group>"; };
+		439D395525F55E0300C0AA05 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		439D395A25F5637600C0AA05 /* ServerFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerFetcher.swift; sourceTree = "<group>"; };
+		439D395F25F57DCB00C0AA05 /* OompaLoompaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OompaLoompaTableViewCell.swift; sourceTree = "<group>"; };
+		439D396425F57F1C00C0AA05 /* OompaLoompaPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OompaLoompaPresentable.swift; sourceTree = "<group>"; };
+		439D396925F57FB500C0AA05 /* CrewListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewListViewModel.swift; sourceTree = "<group>"; };
+		439D397125F5815B00C0AA05 /* OompaLoompaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OompaLoompaViewModel.swift; sourceTree = "<group>"; };
+		439D397A25F613FB00C0AA05 /* CustomActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivityIndicatorView.swift; sourceTree = "<group>"; };
+		439D398F25F61BCF00C0AA05 /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		439D399D25F6359100C0AA05 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		439D39A525F6424900C0AA05 /* CrewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewList.swift; sourceTree = "<group>"; };
+		439D39DA25F67F2600C0AA05 /* loadingImage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loadingImage.gif; sourceTree = "<group>"; };
+		4ADEFB94A8F8C13463D11267 /* Pods-WonkaCrew-WonkaCrewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WonkaCrew-WonkaCrewUITests.debug.xcconfig"; path = "Target Support Files/Pods-WonkaCrew-WonkaCrewUITests/Pods-WonkaCrew-WonkaCrewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		53BD370992E3192D837D7CAA /* Pods-WonkaCrew-WonkaCrewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WonkaCrew-WonkaCrewUITests.release.xcconfig"; path = "Target Support Files/Pods-WonkaCrew-WonkaCrewUITests/Pods-WonkaCrew-WonkaCrewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9A913A2B00B0894FA80630F8 /* Pods_WonkaCrewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WonkaCrewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5D9B9065C4A61A6055C8F81 /* Pods-WonkaCrew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WonkaCrew.debug.xcconfig"; path = "Target Support Files/Pods-WonkaCrew/Pods-WonkaCrew.debug.xcconfig"; sourceTree = "<group>"; };
+		DDC16830CC3F62D05D80AFC1 /* Pods-WonkaCrewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WonkaCrewTests.release.xcconfig"; path = "Target Support Files/Pods-WonkaCrewTests/Pods-WonkaCrewTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73362A6677A3D9E70DE96A65 /* Pods_WonkaCrew.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4407DD9813FBA53DE86D6DCC /* Pods_WonkaCrewTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C31D0D499CDAF14BA0B97D1B /* Pods_WonkaCrew_WonkaCrewUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +126,8 @@
 				439D38F225F53F7500C0AA05 /* WonkaCrewTests */,
 				439D38FD25F53F7500C0AA05 /* WonkaCrewUITests */,
 				439D38DA25F53F6800C0AA05 /* Products */,
+				5A19CB708627091251C2E1A4 /* Pods */,
+				AAABAFBA04ACCDCAB38BFD14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +144,17 @@
 		439D38DB25F53F6800C0AA05 /* WonkaCrew */ = {
 			isa = PBXGroup;
 			children = (
-				439D38DC25F53F6800C0AA05 /* AppDelegate.swift */,
-				439D38DE25F53F6800C0AA05 /* SceneDelegate.swift */,
-				439D38E025F53F6800C0AA05 /* ViewController.swift */,
-				439D38E225F53F6800C0AA05 /* Main.storyboard */,
-				439D38E525F53F7500C0AA05 /* Assets.xcassets */,
-				439D38E725F53F7500C0AA05 /* LaunchScreen.storyboard */,
-				439D38EA25F53F7500C0AA05 /* Info.plist */,
+				439D392025F5432800C0AA05 /* Delegates */,
+				439D391D25F542C300C0AA05 /* View Controllers */,
+				439D397925F613B600C0AA05 /* Views */,
+				439D393E25F54DB000C0AA05 /* Configuration */,
+				439D398E25F61BB100C0AA05 /* Extensions */,
+				439D392825F5448E00C0AA05 /* Protocols */,
+				439D392725F5444D00C0AA05 /* Managers */,
+				439D394C25F55CD300C0AA05 /* Models */,
+				439D392125F5434D00C0AA05 /* Storyboards */,
+				439D392225F5435E00C0AA05 /* Resources */,
+				439D392325F5436C00C0AA05 /* Supporting Files */,
 			);
 			path = WonkaCrew;
 			sourceTree = "<group>";
@@ -128,6 +177,159 @@
 			path = WonkaCrewUITests;
 			sourceTree = "<group>";
 		};
+		439D391D25F542C300C0AA05 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				439D392925F544D000C0AA05 /* Crew List View Controller */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		439D392025F5432800C0AA05 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				439D38DC25F53F6800C0AA05 /* AppDelegate.swift */,
+				439D38DE25F53F6800C0AA05 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		439D392125F5434D00C0AA05 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				439D38E225F53F6800C0AA05 /* Main.storyboard */,
+				439D38E725F53F7500C0AA05 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		439D392225F5435E00C0AA05 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				439D39DA25F67F2600C0AA05 /* loadingImage.gif */,
+				439D399D25F6359100C0AA05 /* loading.gif */,
+				439D38E525F53F7500C0AA05 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		439D392325F5436C00C0AA05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				439D38EA25F53F7500C0AA05 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		439D392725F5444D00C0AA05 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				439D395A25F5637600C0AA05 /* ServerFetcher.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		439D392825F5448E00C0AA05 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				439D394725F55C5A00C0AA05 /* ServerFetcherType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		439D392925F544D000C0AA05 /* Crew List View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				439D392A25F5455600C0AA05 /* CrewListViewController.swift */,
+				439D393225F5457000C0AA05 /* Protocols */,
+				439D393425F5459D00C0AA05 /* View Models */,
+				439D393325F5457700C0AA05 /* Table View Cells */,
+			);
+			path = "Crew List View Controller";
+			sourceTree = "<group>";
+		};
+		439D393225F5457000C0AA05 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				439D396425F57F1C00C0AA05 /* OompaLoompaPresentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		439D393325F5457700C0AA05 /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				439D395F25F57DCB00C0AA05 /* OompaLoompaTableViewCell.swift */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		439D393425F5459D00C0AA05 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				439D396925F57FB500C0AA05 /* CrewListViewModel.swift */,
+				439D397125F5815B00C0AA05 /* OompaLoompaViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		439D393E25F54DB000C0AA05 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				439D393F25F54DD800C0AA05 /* APIConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		439D394C25F55CD300C0AA05 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				439D39A525F6424900C0AA05 /* CrewList.swift */,
+				439D394D25F55CF000C0AA05 /* OompaLoompa.swift */,
+				439D395525F55E0300C0AA05 /* Gender.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		439D397925F613B600C0AA05 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				439D397A25F613FB00C0AA05 /* CustomActivityIndicatorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		439D398E25F61BB100C0AA05 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				439D398F25F61BCF00C0AA05 /* UIImage+Gif.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5A19CB708627091251C2E1A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5D9B9065C4A61A6055C8F81 /* Pods-WonkaCrew.debug.xcconfig */,
+				0E9538EAA80BCDCC53311F19 /* Pods-WonkaCrew.release.xcconfig */,
+				4ADEFB94A8F8C13463D11267 /* Pods-WonkaCrew-WonkaCrewUITests.debug.xcconfig */,
+				53BD370992E3192D837D7CAA /* Pods-WonkaCrew-WonkaCrewUITests.release.xcconfig */,
+				0D1C3629390CA2E6F7827D50 /* Pods-WonkaCrewTests.debug.xcconfig */,
+				DDC16830CC3F62D05D80AFC1 /* Pods-WonkaCrewTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AAABAFBA04ACCDCAB38BFD14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C82FEB402CE82B6A4C56404 /* Pods_WonkaCrew.framework */,
+				0F54DE638266D10B9D82549C /* Pods_WonkaCrew_WonkaCrewUITests.framework */,
+				9A913A2B00B0894FA80630F8 /* Pods_WonkaCrewTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +337,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 439D390325F53F7500C0AA05 /* Build configuration list for PBXNativeTarget "WonkaCrew" */;
 			buildPhases = (
+				655D3606C719BC93ACEDBA3A /* [CP] Check Pods Manifest.lock */,
 				439D38D525F53F6800C0AA05 /* Sources */,
 				439D38D625F53F6800C0AA05 /* Frameworks */,
 				439D38D725F53F6800C0AA05 /* Resources */,
+				E53F4A46939A015AA65B7C2F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +356,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 439D390625F53F7500C0AA05 /* Build configuration list for PBXNativeTarget "WonkaCrewTests" */;
 			buildPhases = (
+				5B20256B31A9B83E735CEBED /* [CP] Check Pods Manifest.lock */,
 				439D38EB25F53F7500C0AA05 /* Sources */,
 				439D38EC25F53F7500C0AA05 /* Frameworks */,
 				439D38ED25F53F7500C0AA05 /* Resources */,
@@ -170,9 +375,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 439D390925F53F7500C0AA05 /* Build configuration list for PBXNativeTarget "WonkaCrewUITests" */;
 			buildPhases = (
+				6730A883B02D05F6F143AEE8 /* [CP] Check Pods Manifest.lock */,
 				439D38F625F53F7500C0AA05 /* Sources */,
 				439D38F725F53F7500C0AA05 /* Frameworks */,
 				439D38F825F53F7500C0AA05 /* Resources */,
+				05304F8D2F4B17B0319709CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,8 +439,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				439D38E925F53F7500C0AA05 /* LaunchScreen.storyboard in Resources */,
+				439D399E25F6359100C0AA05 /* loading.gif in Resources */,
 				439D38E625F53F7500C0AA05 /* Assets.xcassets in Resources */,
 				439D38E425F53F6800C0AA05 /* Main.storyboard in Resources */,
+				439D39DB25F67F2600C0AA05 /* loadingImage.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +462,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05304F8D2F4B17B0319709CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WonkaCrew-WonkaCrewUITests/Pods-WonkaCrew-WonkaCrewUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WonkaCrew-WonkaCrewUITests/Pods-WonkaCrew-WonkaCrewUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WonkaCrew-WonkaCrewUITests/Pods-WonkaCrew-WonkaCrewUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B20256B31A9B83E735CEBED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WonkaCrewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		655D3606C719BC93ACEDBA3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WonkaCrew-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6730A883B02D05F6F143AEE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WonkaCrew-WonkaCrewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E53F4A46939A015AA65B7C2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WonkaCrew/Pods-WonkaCrew-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WonkaCrew/Pods-WonkaCrew-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WonkaCrew/Pods-WonkaCrew-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		439D38D525F53F6800C0AA05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				439D38E125F53F6800C0AA05 /* ViewController.swift in Sources */,
 				439D38DD25F53F6800C0AA05 /* AppDelegate.swift in Sources */,
+				439D394825F55C5A00C0AA05 /* ServerFetcherType.swift in Sources */,
+				439D399025F61BCF00C0AA05 /* UIImage+Gif.swift in Sources */,
+				439D396525F57F1C00C0AA05 /* OompaLoompaPresentable.swift in Sources */,
+				439D397B25F613FB00C0AA05 /* CustomActivityIndicatorView.swift in Sources */,
+				439D396025F57DCB00C0AA05 /* OompaLoompaTableViewCell.swift in Sources */,
+				439D394E25F55CF000C0AA05 /* OompaLoompa.swift in Sources */,
+				439D397225F5815B00C0AA05 /* OompaLoompaViewModel.swift in Sources */,
+				439D392B25F5455600C0AA05 /* CrewListViewController.swift in Sources */,
+				439D396A25F57FB500C0AA05 /* CrewListViewModel.swift in Sources */,
 				439D38DF25F53F6800C0AA05 /* SceneDelegate.swift in Sources */,
+				439D394025F54DD800C0AA05 /* APIConfiguration.swift in Sources */,
+				439D395B25F5637600C0AA05 /* ServerFetcher.swift in Sources */,
+				439D395625F55E0300C0AA05 /* Gender.swift in Sources */,
+				439D39A625F6424900C0AA05 /* CrewList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,12 +757,14 @@
 		};
 		439D390425F53F7500C0AA05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5D9B9065C4A61A6055C8F81 /* Pods-WonkaCrew.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JV5FAB4U3X;
-				INFOPLIST_FILE = WonkaCrew/Info.plist;
+				INFOPLIST_FILE = "WonkaCrew/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,18 +772,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.angelabadperez.WonkaCrew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		439D390525F53F7500C0AA05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E9538EAA80BCDCC53311F19 /* Pods-WonkaCrew.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JV5FAB4U3X;
-				INFOPLIST_FILE = WonkaCrew/Info.plist;
+				INFOPLIST_FILE = "WonkaCrew/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,12 +793,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.angelabadperez.WonkaCrew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		439D390725F53F7500C0AA05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D1C3629390CA2E6F7827D50 /* Pods-WonkaCrewTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +822,7 @@
 		};
 		439D390825F53F7500C0AA05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDC16830CC3F62D05D80AFC1 /* Pods-WonkaCrewTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +845,7 @@
 		};
 		439D390A25F53F7500C0AA05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ADEFB94A8F8C13463D11267 /* Pods-WonkaCrew-WonkaCrewUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +866,7 @@
 		};
 		439D390B25F53F7500C0AA05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53BD370992E3192D837D7CAA /* Pods-WonkaCrew-WonkaCrewUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
