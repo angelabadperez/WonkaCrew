@@ -70,11 +70,33 @@ class AppCoordinator: Coordinator {
             self?.showFilters(from: viewModel)
         }
         
+        viewModel.didGetError = { [weak self] errorText in
+            self?.showErrorAlert(with: errorText)
+        }
+        
         // Configure Crew List View Controller
         crewListViewController.viewModel = viewModel
         
         // Push Crew List View Controller onto navigation stack
         navigationController.pushViewController(crewListViewController, animated: true)
+    }
+    
+    private func showErrorAlert(with error: String) {
+        // Initialize Error Alert View Controller
+        let errorAlertViewController = ErrorAlertViewController.instantiate()
+        
+        // Configure Error Alert View Controller
+        errorAlertViewController.errorText = error
+        
+        // Install handlers
+        errorAlertViewController.didTapClose = { [weak self] in
+            self?.navigationController.dismiss(animated: true)
+        }
+        
+        // Present Error Alert View Controller
+        errorAlertViewController.modalPresentationStyle = .overCurrentContext
+        errorAlertViewController.modalTransitionStyle = .crossDissolve
+        navigationController.present(errorAlertViewController, animated: true)
     }
     
     private func showFilters(from delegate: FiltersViewModelDelegate) {

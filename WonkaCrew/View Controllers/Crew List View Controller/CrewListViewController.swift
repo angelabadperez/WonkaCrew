@@ -72,8 +72,25 @@ class CrewListViewController: UIViewController, Storyboardable {
         tableView.tableFooterView = UIView()
     }
     
+    // MARK: - Helper methods
+    
     private func scrollToTop() {
+        guard let viewModel = viewModel,
+              viewModel.numberOfCrew > 0 else { return }
         tableView.scrollToRow(at: IndexPath(row: .zero, section: .zero), at: .top, animated: true)
+    }
+    
+    private func setEmptyTableView() {
+        // Initialize Empty Table View
+        let emptyTableView = EmptyTableView()
+        
+        // Install handler
+        emptyTableView.didTapTryAgain = { [weak self] in
+            self?.viewModel?.fetchCrewList()
+        }
+        
+        // Set Empty Table View
+        tableView.setEmptyView(emptyTableView)
     }
     
     // MARK: - Actions
@@ -104,7 +121,16 @@ extension CrewListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel?.numberOfCrew ?? 0
+        guard let viewModel = viewModel else { return 0 }
+        let numberOfRows = viewModel.numberOfCrew
+        
+        if numberOfRows == .zero {
+            setEmptyTableView()
+        } else {
+            tableView.restore()
+        }
+        
+        return numberOfRows
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

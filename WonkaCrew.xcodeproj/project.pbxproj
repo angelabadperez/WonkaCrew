@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		431A420225F81C3D00DB7F11 /* ErrorAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A420125F81C3D00DB7F11 /* ErrorAlertViewController.swift */; };
+		431A420D25F8246300DB7F11 /* EmptyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A420C25F8246300DB7F11 /* EmptyTableView.swift */; };
+		431A421225F8292000DB7F11 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A421125F8292000DB7F11 /* TableView.swift */; };
 		439D38DD25F53F6800C0AA05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D38DC25F53F6800C0AA05 /* AppDelegate.swift */; };
 		439D38DF25F53F6800C0AA05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D38DE25F53F6800C0AA05 /* SceneDelegate.swift */; };
 		439D38E425F53F6800C0AA05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 439D38E225F53F6800C0AA05 /* Main.storyboard */; };
@@ -68,6 +71,9 @@
 		0E9538EAA80BCDCC53311F19 /* Pods-WonkaCrew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WonkaCrew.release.xcconfig"; path = "Target Support Files/Pods-WonkaCrew/Pods-WonkaCrew.release.xcconfig"; sourceTree = "<group>"; };
 		0F54DE638266D10B9D82549C /* Pods_WonkaCrew_WonkaCrewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WonkaCrew_WonkaCrewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C82FEB402CE82B6A4C56404 /* Pods_WonkaCrew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WonkaCrew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		431A420125F81C3D00DB7F11 /* ErrorAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAlertViewController.swift; sourceTree = "<group>"; };
+		431A420C25F8246300DB7F11 /* EmptyTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTableView.swift; sourceTree = "<group>"; };
+		431A421125F8292000DB7F11 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		439D38D925F53F6800C0AA05 /* WonkaCrew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WonkaCrew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		439D38DC25F53F6800C0AA05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		439D38DE25F53F6800C0AA05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +149,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		431A420025F81BD600DB7F11 /* Error Alert View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				431A420125F81C3D00DB7F11 /* ErrorAlertViewController.swift */,
+			);
+			path = "Error Alert View Controller";
+			sourceTree = "<group>";
+		};
 		439D38D025F53F6800C0AA05 = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +219,7 @@
 		439D391D25F542C300C0AA05 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				431A420025F81BD600DB7F11 /* Error Alert View Controller */,
 				439D392925F544D000C0AA05 /* Crew List View Controller */,
 				439D3A1625F6DF5300C0AA05 /* Filters View Controller */,
 			);
@@ -322,6 +337,7 @@
 		439D397925F613B600C0AA05 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				431A420C25F8246300DB7F11 /* EmptyTableView.swift */,
 				439D3A4825F79C7100C0AA05 /* FiltersHeaderView.swift */,
 				439D397A25F613FB00C0AA05 /* CustomActivityIndicatorView.swift */,
 			);
@@ -331,6 +347,7 @@
 		439D398E25F61BB100C0AA05 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				431A421125F8292000DB7F11 /* TableView.swift */,
 				439D398F25F61BCF00C0AA05 /* UIImage+Gif.swift */,
 				439D3A4325F77A9800C0AA05 /* UserDefaults.swift */,
 			);
@@ -655,12 +672,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				439D3A4925F79C7100C0AA05 /* FiltersHeaderView.swift in Sources */,
+				431A421225F8292000DB7F11 /* TableView.swift in Sources */,
 				439D38DD25F53F6800C0AA05 /* AppDelegate.swift in Sources */,
 				439D394825F55C5A00C0AA05 /* ServerFetcherType.swift in Sources */,
 				439D399025F61BCF00C0AA05 /* UIImage+Gif.swift in Sources */,
 				439D396525F57F1C00C0AA05 /* OompaLoompaPresentable.swift in Sources */,
 				439D3A4425F77A9800C0AA05 /* UserDefaults.swift in Sources */,
 				439D397B25F613FB00C0AA05 /* CustomActivityIndicatorView.swift in Sources */,
+				431A420D25F8246300DB7F11 /* EmptyTableView.swift in Sources */,
 				439D396025F57DCB00C0AA05 /* OompaLoompaTableViewCell.swift in Sources */,
 				439D3A0325F6D7D100C0AA05 /* AppCoordinator.swift in Sources */,
 				439D3A3125F6E4B300C0AA05 /* FilterProfessionViewModel.swift in Sources */,
@@ -672,6 +691,7 @@
 				439D392B25F5455600C0AA05 /* CrewListViewController.swift in Sources */,
 				439D396A25F57FB500C0AA05 /* CrewListViewModel.swift in Sources */,
 				439D3A3F25F76BE700C0AA05 /* Profession.swift in Sources */,
+				431A420225F81C3D00DB7F11 /* ErrorAlertViewController.swift in Sources */,
 				439D39FE25F6D75D00C0AA05 /* Coordinator.swift in Sources */,
 				439D38DF25F53F6800C0AA05 /* SceneDelegate.swift in Sources */,
 				439D394025F54DD800C0AA05 /* APIConfiguration.swift in Sources */,
