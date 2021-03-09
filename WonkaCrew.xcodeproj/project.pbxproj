@@ -29,6 +29,18 @@
 		439D399E25F6359100C0AA05 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 439D399D25F6359100C0AA05 /* loading.gif */; };
 		439D39A625F6424900C0AA05 /* CrewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D39A525F6424900C0AA05 /* CrewList.swift */; };
 		439D39DB25F67F2600C0AA05 /* loadingImage.gif in Resources */ = {isa = PBXBuildFile; fileRef = 439D39DA25F67F2600C0AA05 /* loadingImage.gif */; };
+		439D39F725F6D62000C0AA05 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D39F625F6D62000C0AA05 /* Storyboardable.swift */; };
+		439D39FE25F6D75D00C0AA05 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D39FD25F6D75D00C0AA05 /* Coordinator.swift */; };
+		439D3A0325F6D7D100C0AA05 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D3A0225F6D7D100C0AA05 /* AppCoordinator.swift */; };
+		439D3A1825F6DF7300C0AA05 /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D3A1725F6DF7300C0AA05 /* FiltersViewController.swift */; };
+		439D3A2225F6E42F00C0AA05 /* FiltersPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D3A2125F6E42F00C0AA05 /* FiltersPresentable.swift */; };
+		439D3A2725F6E48B00C0AA05 /* FiltersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D3A2625F6E48B00C0AA05 /* FiltersViewModel.swift */; };
+		439D3A2C25F6E4A000C0AA05 /* FilterGenderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D3A2B25F6E4A000C0AA05 /* FilterGenderViewModel.swift */; };
+		439D3A3125F6E4B300C0AA05 /* FilterProfessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D3A3025F6E4B300C0AA05 /* FilterProfessionViewModel.swift */; };
+		439D3A3725F764C800C0AA05 /* FiltersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D3A3625F764C800C0AA05 /* FiltersTableViewCell.swift */; };
+		439D3A3F25F76BE700C0AA05 /* Profession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D3A3E25F76BE700C0AA05 /* Profession.swift */; };
+		439D3A4425F77A9800C0AA05 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D3A4325F77A9800C0AA05 /* UserDefaults.swift */; };
+		439D3A4925F79C7100C0AA05 /* FiltersHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D3A4825F79C7100C0AA05 /* FiltersHeaderView.swift */; };
 		4407DD9813FBA53DE86D6DCC /* Pods_WonkaCrewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A913A2B00B0894FA80630F8 /* Pods_WonkaCrewTests.framework */; };
 		73362A6677A3D9E70DE96A65 /* Pods_WonkaCrew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C82FEB402CE82B6A4C56404 /* Pods_WonkaCrew.framework */; };
 		C31D0D499CDAF14BA0B97D1B /* Pods_WonkaCrew_WonkaCrewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F54DE638266D10B9D82549C /* Pods_WonkaCrew_WonkaCrewUITests.framework */; };
@@ -84,6 +96,18 @@
 		439D399D25F6359100C0AA05 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		439D39A525F6424900C0AA05 /* CrewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewList.swift; sourceTree = "<group>"; };
 		439D39DA25F67F2600C0AA05 /* loadingImage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loadingImage.gif; sourceTree = "<group>"; };
+		439D39F625F6D62000C0AA05 /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		439D39FD25F6D75D00C0AA05 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		439D3A0225F6D7D100C0AA05 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		439D3A1725F6DF7300C0AA05 /* FiltersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
+		439D3A2125F6E42F00C0AA05 /* FiltersPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersPresentable.swift; sourceTree = "<group>"; };
+		439D3A2625F6E48B00C0AA05 /* FiltersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersViewModel.swift; sourceTree = "<group>"; };
+		439D3A2B25F6E4A000C0AA05 /* FilterGenderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterGenderViewModel.swift; sourceTree = "<group>"; };
+		439D3A3025F6E4B300C0AA05 /* FilterProfessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterProfessionViewModel.swift; sourceTree = "<group>"; };
+		439D3A3625F764C800C0AA05 /* FiltersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersTableViewCell.swift; sourceTree = "<group>"; };
+		439D3A3E25F76BE700C0AA05 /* Profession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profession.swift; sourceTree = "<group>"; };
+		439D3A4325F77A9800C0AA05 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		439D3A4825F79C7100C0AA05 /* FiltersHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersHeaderView.swift; sourceTree = "<group>"; };
 		4ADEFB94A8F8C13463D11267 /* Pods-WonkaCrew-WonkaCrewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WonkaCrew-WonkaCrewUITests.debug.xcconfig"; path = "Target Support Files/Pods-WonkaCrew-WonkaCrewUITests/Pods-WonkaCrew-WonkaCrewUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		53BD370992E3192D837D7CAA /* Pods-WonkaCrew-WonkaCrewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WonkaCrew-WonkaCrewUITests.release.xcconfig"; path = "Target Support Files/Pods-WonkaCrew-WonkaCrewUITests/Pods-WonkaCrew-WonkaCrewUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9A913A2B00B0894FA80630F8 /* Pods_WonkaCrewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WonkaCrewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +170,7 @@
 			children = (
 				439D392025F5432800C0AA05 /* Delegates */,
 				439D391D25F542C300C0AA05 /* View Controllers */,
+				439D39FB25F6D73300C0AA05 /* Coordinators */,
 				439D397925F613B600C0AA05 /* Views */,
 				439D393E25F54DB000C0AA05 /* Configuration */,
 				439D398E25F61BB100C0AA05 /* Extensions */,
@@ -181,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				439D392925F544D000C0AA05 /* Crew List View Controller */,
+				439D3A1625F6DF5300C0AA05 /* Filters View Controller */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -233,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				439D394725F55C5A00C0AA05 /* ServerFetcherType.swift */,
+				439D39F625F6D62000C0AA05 /* Storyboardable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -287,6 +314,7 @@
 				439D39A525F6424900C0AA05 /* CrewList.swift */,
 				439D394D25F55CF000C0AA05 /* OompaLoompa.swift */,
 				439D395525F55E0300C0AA05 /* Gender.swift */,
+				439D3A3E25F76BE700C0AA05 /* Profession.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -294,6 +322,7 @@
 		439D397925F613B600C0AA05 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				439D3A4825F79C7100C0AA05 /* FiltersHeaderView.swift */,
 				439D397A25F613FB00C0AA05 /* CustomActivityIndicatorView.swift */,
 			);
 			path = Views;
@@ -303,8 +332,63 @@
 			isa = PBXGroup;
 			children = (
 				439D398F25F61BCF00C0AA05 /* UIImage+Gif.swift */,
+				439D3A4325F77A9800C0AA05 /* UserDefaults.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		439D39FB25F6D73300C0AA05 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				439D39FD25F6D75D00C0AA05 /* Coordinator.swift */,
+				439D39FC25F6D74E00C0AA05 /* Application Coordinator */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		439D39FC25F6D74E00C0AA05 /* Application Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				439D3A0225F6D7D100C0AA05 /* AppCoordinator.swift */,
+			);
+			path = "Application Coordinator";
+			sourceTree = "<group>";
+		};
+		439D3A1625F6DF5300C0AA05 /* Filters View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				439D3A1725F6DF7300C0AA05 /* FiltersViewController.swift */,
+				439D3A2025F6E41600C0AA05 /* Protocols */,
+				439D3A1F25F6E40C00C0AA05 /* View Models */,
+				439D3A3525F764A700C0AA05 /* Table View Cells */,
+			);
+			path = "Filters View Controller";
+			sourceTree = "<group>";
+		};
+		439D3A1F25F6E40C00C0AA05 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				439D3A2625F6E48B00C0AA05 /* FiltersViewModel.swift */,
+				439D3A2B25F6E4A000C0AA05 /* FilterGenderViewModel.swift */,
+				439D3A3025F6E4B300C0AA05 /* FilterProfessionViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		439D3A2025F6E41600C0AA05 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				439D3A2125F6E42F00C0AA05 /* FiltersPresentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		439D3A3525F764A700C0AA05 /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				439D3A3625F764C800C0AA05 /* FiltersTableViewCell.swift */,
+			);
+			path = "Table View Cells";
 			sourceTree = "<group>";
 		};
 		5A19CB708627091251C2E1A4 /* Pods */ = {
@@ -570,19 +654,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				439D3A4925F79C7100C0AA05 /* FiltersHeaderView.swift in Sources */,
 				439D38DD25F53F6800C0AA05 /* AppDelegate.swift in Sources */,
 				439D394825F55C5A00C0AA05 /* ServerFetcherType.swift in Sources */,
 				439D399025F61BCF00C0AA05 /* UIImage+Gif.swift in Sources */,
 				439D396525F57F1C00C0AA05 /* OompaLoompaPresentable.swift in Sources */,
+				439D3A4425F77A9800C0AA05 /* UserDefaults.swift in Sources */,
 				439D397B25F613FB00C0AA05 /* CustomActivityIndicatorView.swift in Sources */,
 				439D396025F57DCB00C0AA05 /* OompaLoompaTableViewCell.swift in Sources */,
+				439D3A0325F6D7D100C0AA05 /* AppCoordinator.swift in Sources */,
+				439D3A3125F6E4B300C0AA05 /* FilterProfessionViewModel.swift in Sources */,
+				439D3A2C25F6E4A000C0AA05 /* FilterGenderViewModel.swift in Sources */,
+				439D3A3725F764C800C0AA05 /* FiltersTableViewCell.swift in Sources */,
+				439D3A1825F6DF7300C0AA05 /* FiltersViewController.swift in Sources */,
 				439D394E25F55CF000C0AA05 /* OompaLoompa.swift in Sources */,
 				439D397225F5815B00C0AA05 /* OompaLoompaViewModel.swift in Sources */,
 				439D392B25F5455600C0AA05 /* CrewListViewController.swift in Sources */,
 				439D396A25F57FB500C0AA05 /* CrewListViewModel.swift in Sources */,
+				439D3A3F25F76BE700C0AA05 /* Profession.swift in Sources */,
+				439D39FE25F6D75D00C0AA05 /* Coordinator.swift in Sources */,
 				439D38DF25F53F6800C0AA05 /* SceneDelegate.swift in Sources */,
 				439D394025F54DD800C0AA05 /* APIConfiguration.swift in Sources */,
+				439D39F725F6D62000C0AA05 /* Storyboardable.swift in Sources */,
+				439D3A2725F6E48B00C0AA05 /* FiltersViewModel.swift in Sources */,
 				439D395B25F5637600C0AA05 /* ServerFetcher.swift in Sources */,
+				439D3A2225F6E42F00C0AA05 /* FiltersPresentable.swift in Sources */,
 				439D395625F55E0300C0AA05 /* Gender.swift in Sources */,
 				439D39A625F6424900C0AA05 /* CrewList.swift in Sources */,
 			);

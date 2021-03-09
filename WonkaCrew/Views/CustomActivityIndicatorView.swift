@@ -91,18 +91,8 @@ class CustomActivityIndicatorView: UIView {
         containerView.addSubview(backgroundView)
         backgroundView.addSubview(activityIndicatorImageView)
         
-        //addContainerViewConstraints()
         addBackgroundViewConstraints()
         addImageViewConstraints()
-    }
-    
-    private func addContainerViewConstraints() {
-        guard let containerView = containerView else {
-            fatalError(Constants.Container.error)
-        }
-        
-        containerView.translatesAutoresizingMaskIntoConstraints = false
-        
     }
     
     private func addBackgroundViewConstraints() {
