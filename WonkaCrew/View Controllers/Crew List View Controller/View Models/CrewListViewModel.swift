@@ -29,7 +29,6 @@ final class CrewListViewModel {
     private var serverFetcher: ServerFetcherType
     
     private var allCrewList: [OompaLoompa]
-    private var error: ServerFetcherError?
     private var page: Int = 1
     private var isLoading: Bool = false
     private var filter: (Gender?, [Profession]) = (nil, [])
@@ -76,12 +75,10 @@ final class CrewListViewModel {
     
     var didTapFilter: (() -> Void)?
     
+    var didGetError: ((String) -> Void)?
+    
     var title: String {
         return Constants.title
-    }
-    
-    var errorMessage: String {
-        return error?.errorDescription ?? ""
     }
     
     var numberOfSections: Int {
@@ -113,7 +110,7 @@ final class CrewListViewModel {
             case .success(let crew):
                 self.allCrewList.append(contentsOf: crew.results)
             case .failure(let error):
-                self.error = error
+                self.didGetError?(error.errorDescription ?? "")
             }
             
             self.page += 1

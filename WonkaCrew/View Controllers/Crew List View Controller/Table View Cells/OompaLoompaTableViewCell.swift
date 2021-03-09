@@ -13,6 +13,7 @@ class OompaLoompaTableViewCell: UITableViewCell {
     // MARK: - Private Constants
     
     private enum Constants {
+        static let noImage: String = "noImage"
         static let indicatorName: String = "loadingImage"
         static let indicatorType: String = "gif"
     }
@@ -46,7 +47,11 @@ class OompaLoompaTableViewCell: UITableViewCell {
     
     func configure(with presentable: OompaLoompaPresentable) {
         // Configure icon ImageView
-        iconImageView.kf.setImage(with: URL(string: presentable.image))
+        iconImageView.kf.setImage(with: URL(string: presentable.image)) { [weak self] result in
+            if case .failure(_) = result {
+                self?.iconImageView.image = UIImage(named: Constants.noImage)
+            }
+        }
         
         // Configure labels
         fullNameLabel.text = presentable.fullName
