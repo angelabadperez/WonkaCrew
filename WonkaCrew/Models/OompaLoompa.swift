@@ -32,8 +32,8 @@ struct OompaLoompa: Decodable {
         email = try values.decode(String.self, forKey: .email)
         age = try values.decode(Int.self, forKey: .age)
         height = try values.decode(Int.self, forKey: .height)
-        gender = Gender(rawValue: try values.decode(String.self, forKey: .gender)) ?? .other
-        profession = try values.decode(String.self, forKey: .profession)
+        gender = Gender(string: try values.decode(String.self, forKey: .gender))
+        profession = Profession(string: try values.decode(String.self, forKey: .profession))
         country = try values.decode(String.self, forKey: .country)
         image = try values.decode(String.self, forKey: .image)
     }
@@ -47,7 +47,7 @@ struct OompaLoompa: Decodable {
     let age: Int
     let height: Int
     let gender: Gender
-    let profession: String
+    let profession: Profession
     let country: String
     let image: String
 }

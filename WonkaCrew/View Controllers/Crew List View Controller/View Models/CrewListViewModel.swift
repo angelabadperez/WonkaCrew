@@ -8,30 +8,53 @@
 import Foundation
 
 protocol CrewListViewModelDelegate: AnyObject {
-    func reloadData()
+    func didFetchData()
+    func didChangeFilter()
 }
 
 final class CrewListViewModel {
     
+    // MARK: - Private constants
+    
+    private enum Constants {
+        static let title: String = "Crew List"
+        // Set here manually because the server always returns data, even if we set an invalid page (> 20).
+        static let maxPage: Int = 20
+    }
+    
     // MARK: - Properties
     
-    weak var delegate: CrewListViewModelDelegate?
-    var serverFetcher: ServerFetcherType
+    weak private var delegate: CrewListViewModelDelegate?
+    
+    private var serverFetcher: ServerFetcherType
     
     private var allCrewList: [OompaLoompa]
     private var error: ServerFetcherError?
     private var page: Int = 1
     private var isLoading: Bool = false
-    
-    private var filter: [(OompaLoompa) -> Bool]? = []
+    private var filter: (Gender?, [Profession]) = (nil, [])
     
     private var filteredCrewList: [OompaLoompa] {
-        guard let filter = filter, !filter.isEmpty else { return allCrewList }
+        if filter.0 == nil && filter.1.isEmpty {
+            return allCrewList
+        }
+        
         return allCrewList
-            .filter { oompaLoompa in
-                return filter.reduce(true) { isMatch, condition in
-                    return isMatch && condition(oompaLoompa)
+            .filter {
+                var matches = true
+                
+                // Filter by gender (if selected)
+                if let genderFilter = filter.0 {
+                    matches = genderFilter == $0.gender
                 }
+                
+                // Filter by profession(s) (if selected)
+                let professionFilter = filter.1
+                if !professionFilter.isEmpty {
+                    matches = matches && filter.1.contains($0.profession)
+                }
+                
+                return matches
             }
     }
     
@@ -42,11 +65,20 @@ final class CrewListViewModel {
         self.delegate = delegate
         self.allCrewList = []
         
+        // Set initial filter
+        refreshFilter()
+        
         // Fetch data
         fetchCrewList()
     }
     
     // MARK: - Public API
+    
+    var didTapFilter: (() -> Void)?
+    
+    var title: String {
+        return Constants.title
+    }
     
     var errorMessage: String {
         return error?.errorDescription ?? ""
@@ -64,10 +96,13 @@ final class CrewListViewModel {
         return OompaLoompaViewModel(oompaLoompa: filteredCrewList[index])
     }
     
-    // MARK: - Private methods
+    func tapFilter() {
+        didTapFilter?()
+    }
     
     func fetchCrewList() {
-        guard !isLoading else { return }
+        guard !isLoading,
+              page <= Constants.maxPage else { return }
         
         isLoading = true
         
@@ -83,8 +118,25 @@ final class CrewListViewModel {
             
             self.page += 1
             self.isLoading = false
-            self.delegate?.reloadData()
+            self.delegate?.didFetchData()
         }
+    }
+    
+    // MARK: - Private methods
+    
+    private func refreshFilter() {
+        filter = (nil, [])
+        filter.0 = UserDefaults.gender
+        filter.1 = UserDefaults.professions
+    }
+}
+
+extension CrewListViewModel: FiltersViewModelDelegate {
+    func didChangeFilter() {
+        // Refresh filter
+        refreshFilter()
         
+        // Reload view controller's data
+        delegate?.didChangeFilter()
     }
 }

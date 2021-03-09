@@ -20,7 +20,7 @@ struct OompaLoompaViewModel: OompaLoompaPresentable {
     }
     
     var profession: String {
-        return oompaLoompa.profession
+        return "\(oompaLoompa.profession)".capitalized
     }
     
     var image: String {

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CrewListViewController: UIViewController {
+class CrewListViewController: UIViewController, Storyboardable {
     
     // MARK: - Private constants
     
@@ -18,7 +18,7 @@ class CrewListViewController: UIViewController {
     
     // MARK: - Properties
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak private var tableView: UITableView!
     
     private lazy var activityIndicator: CustomActivityIndicatorView! = {
         let activityIndicator = CustomActivityIndicatorView(frame: self.view.bounds)
@@ -31,8 +31,6 @@ class CrewListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        viewModel = CrewListViewModel(serverFetcher: ServerFetcher(), delegate: self)
         
         setupView()
     }
@@ -51,7 +49,6 @@ class CrewListViewController: UIViewController {
     private func updateView() {
         tableView.isHidden = false
         activityIndicator.isHidden = true
-        
         tableView.reloadData()
     }
     
@@ -61,6 +58,9 @@ class CrewListViewController: UIViewController {
         let filterItem = UIBarButtonItem(image: filterIcon, style: .plain, target: self, action: #selector(filterTapped))
         filterItem.tintColor = .white
         navigationItem.setRightBarButton(filterItem, animated: false)
+        
+        // Setup title
+        title = viewModel?.title
     }
     
     private func setupTableView() {
@@ -68,21 +68,31 @@ class CrewListViewController: UIViewController {
         tableView.isHidden = true
         
         tableView.dataSource = self
-        tableView.prefetchDataSource = self
         tableView.separatorInset = .zero
+        tableView.tableFooterView = UIView()
+    }
+    
+    private func scrollToTop() {
+        tableView.scrollToRow(at: IndexPath(row: .zero, section: .zero), at: .top, animated: true)
     }
     
     // MARK: - Actions
     
     @objc private func filterTapped() {
+        viewModel?.tapFilter()
     }
 }
 
 // MARK: - ViewModel Delegate
 
 extension CrewListViewController: CrewListViewModelDelegate {
-    func reloadData() {
+    func didFetchData() {
         updateView()
+    }
+    
+    func didChangeFilter() {
+        updateView()
+        scrollToTop()
     }
 }
 
@@ -98,25 +108,19 @@ extension CrewListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: OompaLoompaTableViewCell.self), for: indexPath) as? OompaLoompaTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: OompaLoompaTableViewCell.self), for: indexPath) as? OompaLoompaTableViewCell,
+              let viewModel = viewModel else {
             fatalError(Constants.dequeueCellErrorMessage)
         }
         
-        if let viewModel = viewModel?.viewModel(for: indexPath.row) {
+        if let viewModel = viewModel.viewModel(for: indexPath.row) {
             cell.configure(with: viewModel)
         }
         
-        return cell
-    }
-}
-
-// MARK: - TableView Prefetching
-
-extension CrewListViewController: UITableViewDataSourcePrefetching {
-    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
-        guard let viewModel = viewModel else { return }
-        if indexPaths.contains(where: { $0.row >= viewModel.numberOfCrew - 1}) {
+        if indexPath.row == viewModel.numberOfCrew - 1 {
             viewModel.fetchCrewList()
         }
+        
+        return cell
     }
 }
