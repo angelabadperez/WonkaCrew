@@ -75,6 +75,8 @@ final class CrewListViewModel {
     
     var didTapFilter: (() -> Void)?
     
+    var didSelectOompaLoompa: ((OompaLoompaPresentable) -> Void)?
+    
     var didGetError: ((String) -> Void)?
     
     var title: String {
@@ -95,6 +97,12 @@ final class CrewListViewModel {
     
     func tapFilter() {
         didTapFilter?()
+    }
+    
+    func selectOompaLoompa(at index: Int) {
+        if let viewModel = viewModel(for: index) {
+            didSelectOompaLoompa?(viewModel)
+        }
     }
     
     func fetchCrewList() {

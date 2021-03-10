@@ -21,6 +21,7 @@ struct OompaLoompa: Decodable {
         case gender
         case profession
         case country
+        case favorites = "favorite"
         case image
     }
     
@@ -35,6 +36,7 @@ struct OompaLoompa: Decodable {
         gender = Gender(string: try values.decode(String.self, forKey: .gender))
         profession = Profession(string: try values.decode(String.self, forKey: .profession))
         country = try values.decode(String.self, forKey: .country)
+        favorites = try values.decode(Favorites.self, forKey: .favorites)
         image = try values.decode(String.self, forKey: .image)
     }
     
@@ -49,5 +51,6 @@ struct OompaLoompa: Decodable {
     let gender: Gender
     let profession: Profession
     let country: String
+    let favorites: Favorites
     let image: String
 }

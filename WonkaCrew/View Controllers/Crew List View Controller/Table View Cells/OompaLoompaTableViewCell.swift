@@ -25,12 +25,7 @@ class OompaLoompaTableViewCell: UITableViewCell {
     
     @IBOutlet weak var iconImageView: UIImageView! {
         didSet {
-            guard let path = Bundle.main.path(forResource: Constants.indicatorName, ofType: Constants.indicatorType),
-                  let data = try? Data(contentsOf: URL(fileURLWithPath: path)) else {
-                return
-            }
-            
-            iconImageView.kf.indicatorType = .image(imageData: data)
+            iconImageView.setIndicator()
         }
     }
     
@@ -47,11 +42,7 @@ class OompaLoompaTableViewCell: UITableViewCell {
     
     func configure(with presentable: OompaLoompaPresentable) {
         // Configure icon ImageView
-        iconImageView.kf.setImage(with: URL(string: presentable.image)) { [weak self] result in
-            if case .failure(_) = result {
-                self?.iconImageView.image = UIImage(named: Constants.noImage)
-            }
-        }
+        iconImageView.setImage(url: URL(string: presentable.image), withFailure: true)
         
         // Configure labels
         fullNameLabel.text = presentable.fullName

@@ -23,6 +23,38 @@ struct OompaLoompaViewModel: OompaLoompaPresentable {
         return "\(oompaLoompa.profession)".capitalized
     }
     
+    var gender: String {
+        return "\(oompaLoompa.gender)".capitalized
+    }
+    
+    var email: String {
+        return oompaLoompa.email
+    }
+    
+    var country: String {
+        return oompaLoompa.country
+    }
+    
+    var age: Int {
+        return oompaLoompa.age
+    }
+    
+    var height: Int {
+        return oompaLoompa.height
+    }
+
+    var color: String {
+        return oompaLoompa.favorites.color.capitalized
+    }
+    
+    var food: String {
+        return oompaLoompa.favorites.food.capitalized
+    }
+    
+    var song: String {
+        return oompaLoompa.favorites.song
+    }
+    
     var image: String {
         return oompaLoompa.image
     }
