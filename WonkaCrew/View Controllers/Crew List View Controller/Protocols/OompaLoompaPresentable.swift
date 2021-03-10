@@ -13,5 +13,13 @@ protocol OompaLoompaPresentable {
     
     var fullName: String { get }
     var profession: String { get }
+    var gender: String { get }
+    var email: String { get }
+    var country: String { get }
+    var age: Int { get }
+    var height: Int { get }
+    var color: String { get }
+    var food: String { get }
+    var song: String { get }
     var image: String { get }
 }

@@ -10,6 +10,11 @@
 		431A420225F81C3D00DB7F11 /* ErrorAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A420125F81C3D00DB7F11 /* ErrorAlertViewController.swift */; };
 		431A420D25F8246300DB7F11 /* EmptyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A420C25F8246300DB7F11 /* EmptyTableView.swift */; };
 		431A421225F8292000DB7F11 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A421125F8292000DB7F11 /* TableView.swift */; };
+		431A423725F8392C00DB7F11 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A423625F8392C00DB7F11 /* DetailViewController.swift */; };
+		431A424025F92DA200DB7F11 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A423F25F92DA200DB7F11 /* CGFloat.swift */; };
+		431A424825F95DDB00DB7F11 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A424725F95DDB00DB7F11 /* Favorites.swift */; };
+		431A424D25F9611900DB7F11 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A424C25F9611900DB7F11 /* StackView.swift */; };
+		431A425525F9779B00DB7F11 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A425425F9779B00DB7F11 /* UIView.swift */; };
 		439D38DD25F53F6800C0AA05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D38DC25F53F6800C0AA05 /* AppDelegate.swift */; };
 		439D38DF25F53F6800C0AA05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D38DE25F53F6800C0AA05 /* SceneDelegate.swift */; };
 		439D38E425F53F6800C0AA05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 439D38E225F53F6800C0AA05 /* Main.storyboard */; };
@@ -28,7 +33,7 @@
 		439D396A25F57FB500C0AA05 /* CrewListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D396925F57FB500C0AA05 /* CrewListViewModel.swift */; };
 		439D397225F5815B00C0AA05 /* OompaLoompaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D397125F5815B00C0AA05 /* OompaLoompaViewModel.swift */; };
 		439D397B25F613FB00C0AA05 /* CustomActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D397A25F613FB00C0AA05 /* CustomActivityIndicatorView.swift */; };
-		439D399025F61BCF00C0AA05 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D398F25F61BCF00C0AA05 /* UIImage+Gif.swift */; };
+		439D399025F61BCF00C0AA05 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D398F25F61BCF00C0AA05 /* UIImage.swift */; };
 		439D399E25F6359100C0AA05 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 439D399D25F6359100C0AA05 /* loading.gif */; };
 		439D39A625F6424900C0AA05 /* CrewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D39A525F6424900C0AA05 /* CrewList.swift */; };
 		439D39DB25F67F2600C0AA05 /* loadingImage.gif in Resources */ = {isa = PBXBuildFile; fileRef = 439D39DA25F67F2600C0AA05 /* loadingImage.gif */; };
@@ -74,6 +79,11 @@
 		431A420125F81C3D00DB7F11 /* ErrorAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAlertViewController.swift; sourceTree = "<group>"; };
 		431A420C25F8246300DB7F11 /* EmptyTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTableView.swift; sourceTree = "<group>"; };
 		431A421125F8292000DB7F11 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		431A423625F8392C00DB7F11 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		431A423F25F92DA200DB7F11 /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		431A424725F95DDB00DB7F11 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		431A424C25F9611900DB7F11 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		431A425425F9779B00DB7F11 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		439D38D925F53F6800C0AA05 /* WonkaCrew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WonkaCrew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		439D38DC25F53F6800C0AA05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		439D38DE25F53F6800C0AA05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,7 +108,7 @@
 		439D396925F57FB500C0AA05 /* CrewListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewListViewModel.swift; sourceTree = "<group>"; };
 		439D397125F5815B00C0AA05 /* OompaLoompaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OompaLoompaViewModel.swift; sourceTree = "<group>"; };
 		439D397A25F613FB00C0AA05 /* CustomActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivityIndicatorView.swift; sourceTree = "<group>"; };
-		439D398F25F61BCF00C0AA05 /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		439D398F25F61BCF00C0AA05 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		439D399D25F6359100C0AA05 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		439D39A525F6424900C0AA05 /* CrewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewList.swift; sourceTree = "<group>"; };
 		439D39DA25F67F2600C0AA05 /* loadingImage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loadingImage.gif; sourceTree = "<group>"; };
@@ -155,6 +165,14 @@
 				431A420125F81C3D00DB7F11 /* ErrorAlertViewController.swift */,
 			);
 			path = "Error Alert View Controller";
+			sourceTree = "<group>";
+		};
+		431A423525F8390C00DB7F11 /* Detail View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				431A423625F8392C00DB7F11 /* DetailViewController.swift */,
+			);
+			path = "Detail View Controller";
 			sourceTree = "<group>";
 		};
 		439D38D025F53F6800C0AA05 = {
@@ -221,6 +239,7 @@
 			children = (
 				431A420025F81BD600DB7F11 /* Error Alert View Controller */,
 				439D392925F544D000C0AA05 /* Crew List View Controller */,
+				431A423525F8390C00DB7F11 /* Detail View Controller */,
 				439D3A1625F6DF5300C0AA05 /* Filters View Controller */,
 			);
 			path = "View Controllers";
@@ -330,6 +349,7 @@
 				439D394D25F55CF000C0AA05 /* OompaLoompa.swift */,
 				439D395525F55E0300C0AA05 /* Gender.swift */,
 				439D3A3E25F76BE700C0AA05 /* Profession.swift */,
+				431A424725F95DDB00DB7F11 /* Favorites.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -347,9 +367,12 @@
 		439D398E25F61BB100C0AA05 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				431A423F25F92DA200DB7F11 /* CGFloat.swift */,
 				431A421125F8292000DB7F11 /* TableView.swift */,
-				439D398F25F61BCF00C0AA05 /* UIImage+Gif.swift */,
+				431A424C25F9611900DB7F11 /* StackView.swift */,
+				439D398F25F61BCF00C0AA05 /* UIImage.swift */,
 				439D3A4325F77A9800C0AA05 /* UserDefaults.swift */,
+				431A425425F9779B00DB7F11 /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -675,14 +698,17 @@
 				431A421225F8292000DB7F11 /* TableView.swift in Sources */,
 				439D38DD25F53F6800C0AA05 /* AppDelegate.swift in Sources */,
 				439D394825F55C5A00C0AA05 /* ServerFetcherType.swift in Sources */,
-				439D399025F61BCF00C0AA05 /* UIImage+Gif.swift in Sources */,
+				439D399025F61BCF00C0AA05 /* UIImage.swift in Sources */,
 				439D396525F57F1C00C0AA05 /* OompaLoompaPresentable.swift in Sources */,
 				439D3A4425F77A9800C0AA05 /* UserDefaults.swift in Sources */,
 				439D397B25F613FB00C0AA05 /* CustomActivityIndicatorView.swift in Sources */,
+				431A424025F92DA200DB7F11 /* CGFloat.swift in Sources */,
 				431A420D25F8246300DB7F11 /* EmptyTableView.swift in Sources */,
+				431A425525F9779B00DB7F11 /* UIView.swift in Sources */,
 				439D396025F57DCB00C0AA05 /* OompaLoompaTableViewCell.swift in Sources */,
 				439D3A0325F6D7D100C0AA05 /* AppCoordinator.swift in Sources */,
 				439D3A3125F6E4B300C0AA05 /* FilterProfessionViewModel.swift in Sources */,
+				431A424D25F9611900DB7F11 /* StackView.swift in Sources */,
 				439D3A2C25F6E4A000C0AA05 /* FilterGenderViewModel.swift in Sources */,
 				439D3A3725F764C800C0AA05 /* FiltersTableViewCell.swift in Sources */,
 				439D3A1825F6DF7300C0AA05 /* FiltersViewController.swift in Sources */,
@@ -690,12 +716,14 @@
 				439D397225F5815B00C0AA05 /* OompaLoompaViewModel.swift in Sources */,
 				439D392B25F5455600C0AA05 /* CrewListViewController.swift in Sources */,
 				439D396A25F57FB500C0AA05 /* CrewListViewModel.swift in Sources */,
+				431A423725F8392C00DB7F11 /* DetailViewController.swift in Sources */,
 				439D3A3F25F76BE700C0AA05 /* Profession.swift in Sources */,
 				431A420225F81C3D00DB7F11 /* ErrorAlertViewController.swift in Sources */,
 				439D39FE25F6D75D00C0AA05 /* Coordinator.swift in Sources */,
 				439D38DF25F53F6800C0AA05 /* SceneDelegate.swift in Sources */,
 				439D394025F54DD800C0AA05 /* APIConfiguration.swift in Sources */,
 				439D39F725F6D62000C0AA05 /* Storyboardable.swift in Sources */,
+				431A424825F95DDB00DB7F11 /* Favorites.swift in Sources */,
 				439D3A2725F6E48B00C0AA05 /* FiltersViewModel.swift in Sources */,
 				439D395B25F5637600C0AA05 /* ServerFetcher.swift in Sources */,
 				439D3A2225F6E42F00C0AA05 /* FiltersPresentable.swift in Sources */,

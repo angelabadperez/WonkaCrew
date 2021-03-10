@@ -68,6 +68,7 @@ class CrewListViewController: UIViewController, Storyboardable {
         tableView.isHidden = true
         
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.separatorInset = .zero
         tableView.tableFooterView = UIView()
     }
@@ -148,5 +149,14 @@ extension CrewListViewController: UITableViewDataSource {
         }
         
         return cell
+    }
+}
+
+// MARK: - TableView Delegate
+
+extension CrewListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        viewModel?.selectOompaLoompa(at: indexPath.row)
     }
 }

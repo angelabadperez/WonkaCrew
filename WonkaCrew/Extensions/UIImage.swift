@@ -1,5 +1,5 @@
 //
-//  UIImage+Gif.swift
+//  UIImage.swift
 //  WonkaCrew
 //
 //  Created by Ángel Abad Pérez on 8/3/21.
@@ -7,6 +7,7 @@
 
 import UIKit
 import ImageIO
+import Kingfisher
 
 /*
  
@@ -15,6 +16,35 @@ import ImageIO
  */
 
 extension UIImageView {
+    
+    // MARK: - Private constants
+    
+    private enum Constants {
+        static let noImage: String = "noImage"
+        static let indicatorName: String = "loadingImage"
+        static let indicatorType: String = "gif"
+    }
+    
+    // MARK: - Public API
+    
+    public func setImage(url: URL?, withFailure: Bool = false) {
+        self.kf.setImage(with: url) { result in
+            if withFailure {
+                if case .failure(_) = result {
+                    self.image = UIImage(named: Constants.noImage)
+                }
+            }
+        }
+    }
+    
+    public func setIndicator() {
+        guard let path = Bundle.main.path(forResource: Constants.indicatorName, ofType: Constants.indicatorType),
+              let data = try? Data(contentsOf: URL(fileURLWithPath: path)) else {
+            return
+        }
+        
+        self.kf.indicatorType = .image(imageData: data)
+    }
     
     public func loadGif(name: String) {
         DispatchQueue.global().async {

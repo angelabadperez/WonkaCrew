@@ -21,6 +21,7 @@ class AppCoordinator: Coordinator {
     private lazy var navigationController: UINavigationController = {
         let navigationController = UINavigationController()
         navigationController.navigationBar.barTintColor = UIColor(named: Constants.wonkaColor)
+        navigationController.navigationBar.tintColor = .white
         navigationController.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         return navigationController
     }()
@@ -70,6 +71,10 @@ class AppCoordinator: Coordinator {
             self?.showFilters(from: viewModel)
         }
         
+        viewModel.didSelectOompaLoompa = { [weak self] presentable in
+            self?.showDetail(of: presentable)
+        }
+        
         viewModel.didGetError = { [weak self] errorText in
             self?.showErrorAlert(with: errorText)
         }
@@ -79,6 +84,17 @@ class AppCoordinator: Coordinator {
         
         // Push Crew List View Controller onto navigation stack
         navigationController.pushViewController(crewListViewController, animated: true)
+    }
+    
+    private func showDetail(of presentable: OompaLoompaPresentable) {
+        // Initialize Detail View Controller
+        let detailViewController = DetailViewController.instantiate()
+        
+        // Configure Detail View Controller
+        detailViewController.viewModel = presentable
+        
+        // Push Detail View Controller onto navigation stack
+        navigationController.pushViewController(detailViewController, animated: true)
     }
     
     private func showErrorAlert(with error: String) {
