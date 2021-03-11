@@ -15,13 +15,18 @@
 		431A424825F95DDB00DB7F11 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A424725F95DDB00DB7F11 /* Favorites.swift */; };
 		431A424D25F9611900DB7F11 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A424C25F9611900DB7F11 /* StackView.swift */; };
 		431A425525F9779B00DB7F11 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A425425F9779B00DB7F11 /* UIView.swift */; };
+		431A426825FA0D6600DB7F11 /* crewList.json in Resources */ = {isa = PBXBuildFile; fileRef = 431A426725FA0D6600DB7F11 /* crewList.json */; };
+		431A426F25FA0D7E00DB7F11 /* MockServerFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A426E25FA0D7E00DB7F11 /* MockServerFetcher.swift */; };
+		431A427525FA148900DB7F11 /* CrewListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A427425FA148900DB7F11 /* CrewListViewModelTests.swift */; };
+		431A427B25FA1B7000DB7F11 /* OompaLoompaViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A427A25FA1B7000DB7F11 /* OompaLoompaViewModelTests.swift */; };
+		431A428B25FA3A4B00DB7F11 /* FiltersViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A428A25FA3A4B00DB7F11 /* FiltersViewModelTests.swift */; };
+		431A428F25FA3CD300DB7F11 /* FilterGenderViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A428E25FA3CD300DB7F11 /* FilterGenderViewModelTests.swift */; };
+		431A429325FA3F3200DB7F11 /* FilterProfessionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A429225FA3F3200DB7F11 /* FilterProfessionViewModelTests.swift */; };
 		439D38DD25F53F6800C0AA05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D38DC25F53F6800C0AA05 /* AppDelegate.swift */; };
 		439D38DF25F53F6800C0AA05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D38DE25F53F6800C0AA05 /* SceneDelegate.swift */; };
 		439D38E425F53F6800C0AA05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 439D38E225F53F6800C0AA05 /* Main.storyboard */; };
 		439D38E625F53F7500C0AA05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 439D38E525F53F7500C0AA05 /* Assets.xcassets */; };
 		439D38E925F53F7500C0AA05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 439D38E725F53F7500C0AA05 /* LaunchScreen.storyboard */; };
-		439D38F425F53F7500C0AA05 /* WonkaCrewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D38F325F53F7500C0AA05 /* WonkaCrewTests.swift */; };
-		439D38FF25F53F7500C0AA05 /* WonkaCrewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D38FE25F53F7500C0AA05 /* WonkaCrewUITests.swift */; };
 		439D392B25F5455600C0AA05 /* CrewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D392A25F5455600C0AA05 /* CrewListViewController.swift */; };
 		439D394025F54DD800C0AA05 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D393F25F54DD800C0AA05 /* APIConfiguration.swift */; };
 		439D394825F55C5A00C0AA05 /* ServerFetcherType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D394725F55C5A00C0AA05 /* ServerFetcherType.swift */; };
@@ -51,18 +56,10 @@
 		439D3A4925F79C7100C0AA05 /* FiltersHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D3A4825F79C7100C0AA05 /* FiltersHeaderView.swift */; };
 		4407DD9813FBA53DE86D6DCC /* Pods_WonkaCrewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A913A2B00B0894FA80630F8 /* Pods_WonkaCrewTests.framework */; };
 		73362A6677A3D9E70DE96A65 /* Pods_WonkaCrew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C82FEB402CE82B6A4C56404 /* Pods_WonkaCrew.framework */; };
-		C31D0D499CDAF14BA0B97D1B /* Pods_WonkaCrew_WonkaCrewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F54DE638266D10B9D82549C /* Pods_WonkaCrew_WonkaCrewUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		439D38F025F53F7500C0AA05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 439D38D125F53F6800C0AA05 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 439D38D825F53F6800C0AA05;
-			remoteInfo = WonkaCrew;
-		};
-		439D38FB25F53F7500C0AA05 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 439D38D125F53F6800C0AA05 /* Project object */;
 			proxyType = 1;
@@ -84,6 +81,13 @@
 		431A424725F95DDB00DB7F11 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 		431A424C25F9611900DB7F11 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		431A425425F9779B00DB7F11 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		431A426725FA0D6600DB7F11 /* crewList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = crewList.json; sourceTree = "<group>"; };
+		431A426E25FA0D7E00DB7F11 /* MockServerFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServerFetcher.swift; sourceTree = "<group>"; };
+		431A427425FA148900DB7F11 /* CrewListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewListViewModelTests.swift; sourceTree = "<group>"; };
+		431A427A25FA1B7000DB7F11 /* OompaLoompaViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OompaLoompaViewModelTests.swift; sourceTree = "<group>"; };
+		431A428A25FA3A4B00DB7F11 /* FiltersViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersViewModelTests.swift; sourceTree = "<group>"; };
+		431A428E25FA3CD300DB7F11 /* FilterGenderViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterGenderViewModelTests.swift; sourceTree = "<group>"; };
+		431A429225FA3F3200DB7F11 /* FilterProfessionViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterProfessionViewModelTests.swift; sourceTree = "<group>"; };
 		439D38D925F53F6800C0AA05 /* WonkaCrew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WonkaCrew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		439D38DC25F53F6800C0AA05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		439D38DE25F53F6800C0AA05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,11 +96,7 @@
 		439D38E825F53F7500C0AA05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		439D38EA25F53F7500C0AA05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		439D38EF25F53F7500C0AA05 /* WonkaCrewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WonkaCrewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		439D38F325F53F7500C0AA05 /* WonkaCrewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WonkaCrewTests.swift; sourceTree = "<group>"; };
 		439D38F525F53F7500C0AA05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		439D38FA25F53F7500C0AA05 /* WonkaCrewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WonkaCrewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		439D38FE25F53F7500C0AA05 /* WonkaCrewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WonkaCrewUITests.swift; sourceTree = "<group>"; };
-		439D390025F53F7500C0AA05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		439D392A25F5455600C0AA05 /* CrewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewListViewController.swift; sourceTree = "<group>"; };
 		439D393F25F54DD800C0AA05 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
 		439D394725F55C5A00C0AA05 /* ServerFetcherType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerFetcherType.swift; sourceTree = "<group>"; };
@@ -148,14 +148,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		439D38F725F53F7500C0AA05 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C31D0D499CDAF14BA0B97D1B /* Pods_WonkaCrew_WonkaCrewUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -175,12 +167,39 @@
 			path = "Detail View Controller";
 			sourceTree = "<group>";
 		};
+		431A426425FA057100DB7F11 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				431A426725FA0D6600DB7F11 /* crewList.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		431A426625FA05F200DB7F11 /* Test Cases */ = {
+			isa = PBXGroup;
+			children = (
+				431A427425FA148900DB7F11 /* CrewListViewModelTests.swift */,
+				431A427A25FA1B7000DB7F11 /* OompaLoompaViewModelTests.swift */,
+				431A428A25FA3A4B00DB7F11 /* FiltersViewModelTests.swift */,
+				431A428E25FA3CD300DB7F11 /* FilterGenderViewModelTests.swift */,
+				431A429225FA3F3200DB7F11 /* FilterProfessionViewModelTests.swift */,
+			);
+			path = "Test Cases";
+			sourceTree = "<group>";
+		};
+		431A426D25FA0D6A00DB7F11 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				431A426E25FA0D7E00DB7F11 /* MockServerFetcher.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		439D38D025F53F6800C0AA05 = {
 			isa = PBXGroup;
 			children = (
 				439D38DB25F53F6800C0AA05 /* WonkaCrew */,
 				439D38F225F53F7500C0AA05 /* WonkaCrewTests */,
-				439D38FD25F53F7500C0AA05 /* WonkaCrewUITests */,
 				439D38DA25F53F6800C0AA05 /* Products */,
 				5A19CB708627091251C2E1A4 /* Pods */,
 				AAABAFBA04ACCDCAB38BFD14 /* Frameworks */,
@@ -192,7 +211,6 @@
 			children = (
 				439D38D925F53F6800C0AA05 /* WonkaCrew.app */,
 				439D38EF25F53F7500C0AA05 /* WonkaCrewTests.xctest */,
-				439D38FA25F53F7500C0AA05 /* WonkaCrewUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -219,19 +237,12 @@
 		439D38F225F53F7500C0AA05 /* WonkaCrewTests */ = {
 			isa = PBXGroup;
 			children = (
-				439D38F325F53F7500C0AA05 /* WonkaCrewTests.swift */,
+				431A426425FA057100DB7F11 /* Stubs */,
+				431A426D25FA0D6A00DB7F11 /* Mocks */,
+				431A426625FA05F200DB7F11 /* Test Cases */,
 				439D38F525F53F7500C0AA05 /* Info.plist */,
 			);
 			path = WonkaCrewTests;
-			sourceTree = "<group>";
-		};
-		439D38FD25F53F7500C0AA05 /* WonkaCrewUITests */ = {
-			isa = PBXGroup;
-			children = (
-				439D38FE25F53F7500C0AA05 /* WonkaCrewUITests.swift */,
-				439D390025F53F7500C0AA05 /* Info.plist */,
-			);
-			path = WonkaCrewUITests;
 			sourceTree = "<group>";
 		};
 		439D391D25F542C300C0AA05 /* View Controllers */ = {
@@ -495,26 +506,6 @@
 			productReference = 439D38EF25F53F7500C0AA05 /* WonkaCrewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		439D38F925F53F7500C0AA05 /* WonkaCrewUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 439D390925F53F7500C0AA05 /* Build configuration list for PBXNativeTarget "WonkaCrewUITests" */;
-			buildPhases = (
-				6730A883B02D05F6F143AEE8 /* [CP] Check Pods Manifest.lock */,
-				439D38F625F53F7500C0AA05 /* Sources */,
-				439D38F725F53F7500C0AA05 /* Frameworks */,
-				439D38F825F53F7500C0AA05 /* Resources */,
-				05304F8D2F4B17B0319709CF /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				439D38FC25F53F7500C0AA05 /* PBXTargetDependency */,
-			);
-			name = WonkaCrewUITests;
-			productName = WonkaCrewUITests;
-			productReference = 439D38FA25F53F7500C0AA05 /* WonkaCrewUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -528,10 +519,6 @@
 						CreatedOnToolsVersion = 12.4;
 					};
 					439D38EE25F53F7500C0AA05 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 439D38D825F53F6800C0AA05;
-					};
-					439D38F925F53F7500C0AA05 = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 439D38D825F53F6800C0AA05;
 					};
@@ -552,7 +539,6 @@
 			targets = (
 				439D38D825F53F6800C0AA05 /* WonkaCrew */,
 				439D38EE25F53F7500C0AA05 /* WonkaCrewTests */,
-				439D38F925F53F7500C0AA05 /* WonkaCrewUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -574,36 +560,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		439D38F825F53F7500C0AA05 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				431A426825FA0D6600DB7F11 /* crewList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		05304F8D2F4B17B0319709CF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WonkaCrew-WonkaCrewUITests/Pods-WonkaCrew-WonkaCrewUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WonkaCrew-WonkaCrewUITests/Pods-WonkaCrew-WonkaCrewUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WonkaCrew-WonkaCrewUITests/Pods-WonkaCrew-WonkaCrewUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5B20256B31A9B83E735CEBED /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -642,28 +605,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-WonkaCrew-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6730A883B02D05F6F143AEE8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WonkaCrew-WonkaCrewUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -736,15 +677,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				439D38F425F53F7500C0AA05 /* WonkaCrewTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		439D38F625F53F7500C0AA05 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				439D38FF25F53F7500C0AA05 /* WonkaCrewUITests.swift in Sources */,
+				431A426F25FA0D7E00DB7F11 /* MockServerFetcher.swift in Sources */,
+				431A427525FA148900DB7F11 /* CrewListViewModelTests.swift in Sources */,
+				431A429325FA3F3200DB7F11 /* FilterProfessionViewModelTests.swift in Sources */,
+				431A428F25FA3CD300DB7F11 /* FilterGenderViewModelTests.swift in Sources */,
+				431A428B25FA3A4B00DB7F11 /* FiltersViewModelTests.swift in Sources */,
+				431A427B25FA1B7000DB7F11 /* OompaLoompaViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,11 +693,6 @@
 			isa = PBXTargetDependency;
 			target = 439D38D825F53F6800C0AA05 /* WonkaCrew */;
 			targetProxy = 439D38F025F53F7500C0AA05 /* PBXContainerItemProxy */;
-		};
-		439D38FC25F53F7500C0AA05 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 439D38D825F53F6800C0AA05 /* WonkaCrew */;
-			targetProxy = 439D38FB25F53F7500C0AA05 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -987,48 +920,6 @@
 			};
 			name = Release;
 		};
-		439D390A25F53F7500C0AA05 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4ADEFB94A8F8C13463D11267 /* Pods-WonkaCrew-WonkaCrewUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JV5FAB4U3X;
-				INFOPLIST_FILE = WonkaCrewUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.angelabadperez.WonkaCrewUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WonkaCrew;
-			};
-			name = Debug;
-		};
-		439D390B25F53F7500C0AA05 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53BD370992E3192D837D7CAA /* Pods-WonkaCrew-WonkaCrewUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JV5FAB4U3X;
-				INFOPLIST_FILE = WonkaCrewUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.angelabadperez.WonkaCrewUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WonkaCrew;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1055,15 +946,6 @@
 			buildConfigurations = (
 				439D390725F53F7500C0AA05 /* Debug */,
 				439D390825F53F7500C0AA05 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		439D390925F53F7500C0AA05 /* Build configuration list for PBXNativeTarget "WonkaCrewUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				439D390A25F53F7500C0AA05 /* Debug */,
-				439D390B25F53F7500C0AA05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

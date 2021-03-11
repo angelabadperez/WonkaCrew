@@ -59,7 +59,7 @@ final class CrewListViewModel {
     
     // MARK: - Initialization
     
-    init(serverFetcher: ServerFetcherType, delegate: CrewListViewModelDelegate) {
+    init(serverFetcher: ServerFetcherType, delegate: CrewListViewModelDelegate?) {
         self.serverFetcher = serverFetcher
         self.delegate = delegate
         self.allCrewList = []
