@@ -11,7 +11,7 @@ extension UserDefaults {
     
     // MARK: - Keys
     
-    private enum Keys {
+    public enum Keys {
         static let gender = "gender"
         static let professions = "professions"
     }

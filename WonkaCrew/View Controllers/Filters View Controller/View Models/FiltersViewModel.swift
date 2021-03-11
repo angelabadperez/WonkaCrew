@@ -23,7 +23,7 @@ struct FiltersViewModel {
     
     // MARK: - Properties
     
-    enum Sections: Int, CaseIterable {
+    public enum Sections: Int, CaseIterable {
         
         // MARK: - Private constants
         
@@ -58,7 +58,7 @@ struct FiltersViewModel {
     
     // MARK: - Initialization
     
-    init(delegate: FiltersViewModelDelegate) {
+    init(delegate: FiltersViewModelDelegate?) {
         self.delegate = delegate
     }
     
