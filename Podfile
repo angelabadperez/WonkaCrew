@@ -13,8 +13,4 @@ target 'WonkaCrew' do
     # Pods for testing
   end
 
-  target 'WonkaCrewUITests' do
-    # Pods for testing
-  end
-
 end
